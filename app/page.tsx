@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#011a14] text-white flex flex-col">
       {/* Nav */}
-      <nav className="flex items-center justify-between px-8 py-6">
+      <nav className="flex flex-col sm:flex-row items-center justify-between px-8 py-6">
         <div className="flex items-center gap-3">
           <Image
             src="/logo.svg"
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <a
           href="mailto:contact@bladidz.com"
-          className="text-sm text-white hover:text-[#a6e39d] transition-colors"
+          className="text-sm pl-6 md:pl-0 text-nowrap text-white hover:text-[#a6e39d] transition-colors"
         >
           Contactez-nous ! contact@bladidz.com
         </a>
