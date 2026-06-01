@@ -46,7 +46,7 @@ export default function Countdown({ target }: { target: string }) {
       {units.map((unit, i) => (
         <div key={unit.label} className="flex items-end gap-2">
           <div className="flex flex-col items-center">
-            <span className="text-xs text-gray-500 tracking-widest uppercase mb-2">
+            <span className="text-xs text-[#a6e39d]/60 tracking-widest uppercase mb-2">
               {unit.label}
             </span>
             <span className="text-5xl md:text-6xl font-black tabular-nums leading-none">
@@ -54,7 +54,7 @@ export default function Countdown({ target }: { target: string }) {
             </span>
           </div>
           {i < units.length - 1 && (
-            <span className="text-5xl md:text-6xl font-black leading-none pb-0.5 text-white">
+            <span className="text-5xl md:text-6xl font-black leading-none pb-0.5 text-[#a6e39d]">
               :
             </span>
           )}

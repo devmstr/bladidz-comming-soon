@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Countdown from "@/components/Countdown";
+import Image from 'next/image'
+import Countdown from '@/components/Countdown'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0e0e0e] text-white flex flex-col">
+    <main className="min-h-screen bg-[#011a14] text-white flex flex-col">
       {/* Nav */}
       <nav className="flex items-center justify-between px-8 py-6">
         <div className="flex items-center gap-3">
@@ -14,11 +14,13 @@ export default function Home() {
             height={36}
             priority
           />
-          <span className="text-lg font-semibold tracking-wide">Bladidz.com</span>
+          <span className="text-lg font-semibold tracking-wide">
+            Bladidz.com
+          </span>
         </div>
         <a
           href="mailto:contact@bladidz.com"
-          className="text-sm text-gray-300 hover:text-white transition-colors"
+          className="text-sm text-white hover:text-[#a6e39d] transition-colors"
         >
           Contactez-nous ! contact@bladidz.com
         </a>
@@ -38,22 +40,23 @@ export default function Home() {
           </div>
 
           {/* Right */}
-          <div className="text-gray-400 text-base md:text-lg leading-relaxed max-w-sm space-y-4">
+          <div className="text-white text-base md:text-lg leading-relaxed max-w-sm space-y-4">
             <p>
-              <span className="text-[#a8e39e] font-semibold">Bladidz.com</span> est
-              l&apos;écosystème complet du retour pour les membres de la diaspora
-              algérienne prêts à rentrer au pays.
+              <span className="text-[#a6e39d] font-semibold">Bladidz.com</span>{' '}
+              est l&apos;écosystème complet du retour pour les membres de la
+              diaspora algérienne prêts à rentrer au pays.
             </p>
             <p>
-              Nous connectons les candidats qualifiés avec des entreprises locales,
-              institutions, banques, avocats et partenaires immobiliers — bien
-              au-delà d&apos;une simple bourse d&apos;emploi, avec un matching
-              sponsorisé, des plans d&apos;accès, un workflow de parrainage structuré,
-              un forum communautaire et une gouvernance complète.
+              Nous connectons les candidats qualifiés avec des entreprises
+              locales, institutions, banques, avocats et partenaires immobiliers
+              — bien au-delà d&apos;une simple bourse d&apos;emploi, avec un
+              matching sponsorisé, des plans d&apos;accès, un workflow de
+              parrainage structuré, un forum communautaire et une gouvernance
+              complète.
             </p>
           </div>
         </div>
       </section>
     </main>
-  );
+  )
 }
